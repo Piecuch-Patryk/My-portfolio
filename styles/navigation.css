@@ -1,0 +1,42 @@
+.main-nav {
+    list-style: none;
+}
+
+.main-nav ol {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+}
+
+.main-nav li {
+    width: 35%;
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: .2rem;
+    background-color: rgba(0, 0, 255, 0.2);
+    box-shadow: -.4rem -.4rem rgba(0, 0, 0, 0.08);
+}
+
+.main-nav li a {
+    display: block;
+    line-height: 3rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.stack-overflow {
+    font-size: 1.5rem;
+}
+
+.stack-overflow .fa {
+    font-size: 3rem;
+}
+
+.main-nav .fa {
+    display: block;
+    line-height: 6rem;
+    font-weight: bold;
+}

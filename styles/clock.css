@@ -1,0 +1,11 @@
+.timer-header {
+    position: absolute;
+    top: 0;
+    right: .5rem;
+    font-size: 2rem;
+    text-align: center;
+    /*    color: rgba(255, 100, 100, 0.7);*/
+    border: .2rem solid rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20%;
+    box-shadow: -.4rem -.4rem rgba(0, 0, 0, 0.05);
+}
