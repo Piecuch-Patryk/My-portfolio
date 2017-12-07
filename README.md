@@ -1,2 +1,2 @@
 # My-portfolio
-First sketch of my portfolio. Main page only with some keyframes. Fully responsive.
+First sketch of my portfolio. Fully responsive.
