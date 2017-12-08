@@ -8,6 +8,7 @@
     <!-- styles links    -->
     <link rel="stylesheet" href="./styles/header.css" type="text/css">
     <link rel="stylesheet" href="./styles/main.css" type="text/css">
+    <link rel="stylesheet" href="./styles/subsites.css" type="text/css">
     <link rel="stylesheet" href="./styles/navigation.css" type="text/css">
     <link rel="stylesheet" href="./styles/footer.css" type="text/css">
     <link rel="stylesheet" href="./styles/clock.css" type="text/css">
@@ -31,6 +32,7 @@
             <a class="gplus" href="https://facebook.com" title="facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         </div>
         <div id="clock" class="timer-header"></div>
+        <h3 class="confirmation">E-mail has been send.<br>Thank You for the message. Speak to You soon.</h3>
     </header>
     <nav class="main-nav">
         <ul>
@@ -48,9 +50,14 @@
             </ol>
         </ul>
     </nav>
-    <main class="main-index">
-        <h2>Pleasure to see You!</h2>
-        <p>Welcome to my portfolio website. Place of the internet, where You can take a look at mine projects and find a couple words about me. If You have any questions, feel <a href="./contact.html" title="contact" target="_blank">contact form</a>, please.</p>
+    <main class="main-contact">
+        <h2>Feel free to contact with me</h2>
+        <form class="contact-form" method="post" name="contact-form" action="mail.php">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="E-mail">
+            <textarea type="text" name="message" placeholder="Message" rows="5"></textarea>
+            <button type="submit" id="submit" title="send message">Submit</button>
+        </form>
     </main>
     <div style="clear:both;"></div>
     <section class="section">

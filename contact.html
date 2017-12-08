@@ -51,12 +51,11 @@
     </nav>
     <main class="main-contact">
         <h2>Feel free to contact with me</h2>
-        <form class="contact-form">
-            <input type="email" placeholder="e-mail">
-            <input type="text" placeholder="name">
-            <input type="text" placeholder="topic">
-            <input type="text" placeholder="message">
-            <button type="submit" title="send message">Submit</button>
+        <form class="contact-form" method="post" name="contact-form" action="mail.php">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="E-mail">
+            <textarea type="text" name="message" placeholder="Message" rows="5"></textarea>
+            <button type="submit" id="submit" title="send message">Submit</button>
         </form>
     </main>
     <div style="clear:both;"></div>
