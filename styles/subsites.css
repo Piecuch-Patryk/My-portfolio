@@ -1,5 +1,32 @@
 /*styles for about.html*/
 
+.main-about {
+    text-align: center;
+}
+
+.main-about p,
+.main-about a {
+    font-size: 2rem;
+    word-spacing: .2rem;
+    color: rgba(100, 100, 100, 0.8);
+}
+
+.main-about p {
+    margin: 3rem 0;
+    line-height: 3rem;
+}
+
+.main-about a {
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 255, 0.1);
+    transition: .5s;
+}
+
+.main-about a:hover {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
 
 /*styles for cv.html*/
 
@@ -9,9 +36,24 @@
 }
 
 .main-cv li {
-    margin-top: 2rem;
-    color: rgba(0, 0, 0, 0.5);
+    margin: 2rem;
+}
+
+.main-cv li,
+.main-cv li a {
+    color: rgba(100, 100, 100, 0.8);
     font-size: 2rem;
+}
+
+.main-cv a {
+    letter-spacing: .1rem;
+    transition: 0.5s;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+
+.main-cv a:hover {
+    background-color: rgba(0, 0, 255, 0.2);
 }
 
 
@@ -30,6 +72,7 @@
     color: rgba(0, 0, 0, 0.5);
     font-size: 2rem;
     padding: .5rem;
+    transition: .5s;
 }
 
 .main-projects a:hover {
@@ -40,8 +83,16 @@
 
 /*styles for contact.html*/
 
+.main-contact {
+    transition: .2s;
+}
+
+.main-contact:hover {
+    transform: scale(1.05);
+}
+
 .main-contact h2 {
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .main-contact .contact-form {
@@ -49,15 +100,20 @@
 }
 
 .main-contact .contact-form input {
-    display: block;
-    margin: 1rem auto 1rem auto;
     border: none;
     border-radius: .4rem;
     padding: .5rem;
+    margin: 2rem;
 }
 
-.main-contact .contact-form input:last-of-type {
+.main-contact .contact-form textarea {
+    display: block;
     width: 80%;
+    margin: 0 auto;
+    padding: .5rem;
+    resize: none;
+    border: none;
+    border-radius: .4rem;
 }
 
 .main-contact button {
@@ -70,4 +126,18 @@
     background-color: rgba(0, 0, 255, 0.2);
     box-shadow: -.2rem -.2rem rgba(0, 0, 0, 0.08);
     cursor: pointer;
+    margin: 1rem 0;
+    transition: .2s;
+}
+
+.main-contact button:hover {
+    transform: scale(1.1);
+}
+
+
+/* styles for confirmation.html*/
+
+.confirmation {
+    text-align: center;
+    color: rgba(255, 0, 0, 0.5);
 }
