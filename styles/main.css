@@ -16,7 +16,6 @@ html {
 
 body {
     position: relative;
-    /*view width does't work, don't know why*/
     width: 100%;
     background: radial-gradient(circle, #dddddd 5%, #35b589 110%);
     background-repeat: no-repeat;
@@ -27,10 +26,73 @@ body {
 
 @media only screen and (min-width:1000px) {
     body {
+        box-sizing: border-box;
         width: 100rem;
         margin: 0 auto;
     }
 }
+
+
+/* end */
+
+main {
+    width: 90%;
+    margin: 2rem auto;
+    border: .1rem solid rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    padding: .5rem;
+    box-shadow: -.4rem -.4rem rgba(0, 0, 0, 0.08);
+}
+
+main h2 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: .1rem;
+    margin-top: 2rem;
+}
+
+.main-index p {
+    margin-top: 4rem;
+}
+
+.main-index p,
+.main-index a {
+    font-size: 2rem;
+    word-spacing: .5rem;
+    text-align: center;
+    line-height: 3rem;
+    color: rgba(100, 100, 100, 0.8);
+}
+
+.main-index a {
+    background-color: rgba(0, 0, 255, 0.1);
+    border-radius: .5rem;
+    padding: .5rem;
+    transition: 1s;
+}
+
+.main-index a:hover {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+
+/*resolutions main */
+
+@media screen and (min-width:60rem) {
+    html {
+        min-height: 100vh;
+    }
+    main {
+        box-sizing: border-box;
+        float: right;
+        width: 50%;
+        margin: 2rem auto;
+        min-height: 31rem;
+    }
+}
+
+
+/* end */
 
 .section {
     width: 80%;
@@ -58,46 +120,4 @@ body {
 .section figcaption a {
     color: rgba(0, 0, 0, 0.7);
     text-decoration: underline;
-}
-
-main {
-    width: 90%;
-    margin: 2rem auto;
-    border: .1rem solid rgba(0, 0, 0, 0.08);
-    border-radius: 1rem;
-    padding: .5rem;
-    box-shadow: -.4rem -.4rem rgba(0, 0, 0, 0.08);
-}
-
-main h2 {
-    font-size: 3rem;
-    text-align: center;
-    letter-spacing: .08rem;
-}
-
-main p,
-main p a {
-    font-size: 2rem;
-    letter-spacing: .05rem;
-    text-align: justify;
-    color: rgba(100, 100, 100, 0.8);
-    margin: 1rem 0 3rem 0;
-}
-
-main p a {
-    text-decoration: underline;
-}
-
-
-/*resolutions main */
-
-@media screen and (min-width:60rem) {
-    main {
-        width: 50%;
-        height: 31rem;
-        margin: 4rem 0 0 auto;
-    }
-    main h2 {
-        margin: 5rem 0 5rem 0;
-    }
 }
