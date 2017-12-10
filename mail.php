@@ -10,5 +10,5 @@ $sendTo = 'patrykowo@gmail.com';
 // send message to seted email;
 mail($sendTo, $subject, $message);
 // redirect to confirmation site;
-header('Location: confirmation.html');
+header('Location: confirmation.php');
 ?>
