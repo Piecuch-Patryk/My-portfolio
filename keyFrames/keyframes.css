@@ -1,23 +1,17 @@
-/*toggle opacity title h1*/
-
-.main-header h1 {
-    animation: 1s infinite alternate toggleView;
-}
-
-@keyframes toggleView {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0.5;
-    }
-}
+/*animate font colors*/
 
 
-/*animate clock font colors*/
+/*clock*/
 
 .timer-header {
     animation: 30s infinite alternate toggleColors;
+}
+
+
+/*main section title*/
+
+main h2 {
+    animation: 30s infinite reverse toggleColors;
 }
 
 @keyframes toggleColors {
@@ -25,7 +19,7 @@
         color: rgba(255, 0, 0, 0.4);
     }
     33% {
-        color: rgba(0, 255, 0, 0.4);
+        color: rgba(0, 255, 0, 0.8);
     }
     66 {
         color: rgba(0, 0, 255, 0.4);

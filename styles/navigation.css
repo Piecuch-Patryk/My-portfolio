@@ -17,7 +17,7 @@
     border-radius: 1rem;
     padding: .2rem;
     background-color: rgba(0, 0, 255, 0.2);
-    box-shadow: -.4rem -.4rem rgba(0, 0, 0, 0.08);
+    box-shadow: -.4rem -.4rem rgba(0, 0, 0, 0.05);
 }
 
 .main-nav li a {
@@ -25,6 +25,11 @@
     line-height: 3rem;
     font-style: italic;
     color: rgba(0, 0, 0, 0.5);
+}
+
+.main-nav li:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 255, 0.3);
 }
 
 .stack-overflow {
@@ -39,4 +44,14 @@
     display: block;
     line-height: 6rem;
     font-weight: bold;
+}
+
+
+/*resolutions navigation*/
+
+@media screen and (min-width:60rem) {
+    .main-nav {
+        width: 50%;
+        float: left;
+    }
 }

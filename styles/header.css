@@ -11,7 +11,7 @@
     margin: 3rem auto 3rem auto;
 }
 
-.main-header h1,
+.main-header h1 a,
 .main-header h2 {
     color: rgba(0, 100, 100, 0.9);
     font-size: 2rem;
@@ -45,7 +45,7 @@
     color: #cddddd;
     text-align: center;
     line-height: 5rem;
-    box-shadow: -.4rem -.4rem rgba(0, 0, 0, 0.08);
+    box-shadow: -.4rem -.4rem rgba(0, 0, 0, 0.05);
 }
 
 .socials .fb {
@@ -54,4 +54,9 @@
 
 .socials .gplus {
     background-color: #3B5998;
+}
+
+.socials .fb:hover,
+.socials .gplus:hover {
+    transform: scale(1.2);
 }
